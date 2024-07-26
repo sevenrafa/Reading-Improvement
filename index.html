@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadingImprovement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="titulo__subtitulo">
+            <h1 id="titulo">READING IMPROVEMENT</h1>
+            <h2 id="subtitulo">Melhore sua leitura</h2>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="div__palavras">
+            <h1 id="palavra">Palavras Aqui</h1>
+        </div>
+
+        <div class="quantidade__palavras">
+            <h2 class="palavras__quantidade">Quantidade de palavras</h2>
+        </div>
+
+        <div class="velocidade__palavras__texto">
+            <h2 class="palavras__velocidade">Velocidade palavras</h2>
+        </div>
+
+        <div class="velocidade__palavras">
+            <label for="velocidade"></label>
+            <select name="speedSelect" id="velocidade">
+                <option value="1">Lento</option>
+                <option value="2">Médio</option>
+                <option value="3">Rápido</option>
+            </select>
+        </div>
+
+        <div class="input__palavras">
+            <label for="palavras__lista"></label>
+            <select name="numberSelect" id="palavras__lista">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        
+        <div class="div__botao">
+            <button class="botao__comecar" onclick="leituraController.comecar()">Começar</button>
+            <button class="botao__parar" onclick="leituraController.parar()">Parar</button>
+        </div>
+
+    </main>
+
+    <script src="LeituraController.js"></script>
+    <script src="LeituraLista.js"></script>
+    <script>
+        let leituraController = new LeituraController();
+    </script>
+</body>
+</html>
